@@ -416,10 +416,10 @@ namespace WinSW
                         // if we finished orderly, report that to SCM.
                         // by not reporting unclean shutdown, we let Windows SCM to decide if it wants to
                         // restart the service automatically
-                        if (proc.ExitCode == 0)
-                        {
-                            this.SignalStopped();
-                        }
+                        //if (proc.ExitCode == 0)
+                        //{
+                        //    this.SignalStopped();
+                        //}
 
                         Environment.Exit(proc.ExitCode);
                     }
